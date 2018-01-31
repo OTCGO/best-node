@@ -6,13 +6,13 @@ module.exports = {
             { domain: 'http://127.0.0.1', port: 10332 },
             { domain: 'http://seed2.neo.org', port: 10332 },
             { domain: 'http://seed3.neo.org', port: 10332 },
-            { domain: 'http://seed4.neo.org', port: 10332 },
-            { domain: 'http://seed5.neo.org', port: 10332 },
+            //{ domain: 'http://seed4.neo.org', port: 10332 },
+            //{ domain: 'http://seed5.neo.org', port: 10332 },
             { domain: 'http://seed1.cityofzion.io', port: 8080 },
             { domain: 'http://seed2.cityofzion.io', port: 8080 },
-            { domain: 'http://seed3.cityofzion.io', port: 8080 },
-            { domain: 'http://seed4.cityofzion.io', port: 8080 },
-            { domain: 'http://seed5.cityofzion.io', port: 8080 },
+            //{ domain: 'http://seed3.cityofzion.io', port: 8080 },
+            //{ domain: 'http://seed4.cityofzion.io', port: 8080 },
+            //{ domain: 'http://seed5.cityofzion.io', port: 8080 },
             { domain: 'http://api.otcgo.cn', port: 10332 }
           ]
         },
