@@ -18,11 +18,11 @@ module.exports = {
         },
         testnet: {
           endpoints: [
-            { domain: 'http://seed1.neo.org', port: 20332 },
+            { domain: 'http://seed1.neo.org', port: 20331 },
             { domain: 'http://seed2.neo.org', port: 20332 },
-            { domain: 'http://seed3.neo.org', port: 20332 },
+            // { domain: 'http://seed3.neo.org', port: 20332 },
             // { domain: 'http://seed4.neo.org', port: 20332 },
-            // { domain: 'http://seed5.neo.org', port: 20332 },
+            { domain: 'http://seed5.neo.org', port: 20332 },
             // { domain: 'http://test1.cityofzion.io', port: 8880 },
             // { domain: 'http://test2.cityofzion.io', port: 8880 },
             { domain: 'http://test3.cityofzion.io', port: 8880 },
