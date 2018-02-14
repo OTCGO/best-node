@@ -30,6 +30,28 @@ app.get('/mainnet/node', async (req, res) => {
   })
 })
 
+app.get('/testnet/node', async (req, res) => {
+  const list = config.get('rpc.testnet.endpoints')
+
+  let arr = []
+
+  async.each(list, (item, callback) => {
+    arr.push(getBlockCount(`${item.domain}:${item.port}`))
+    callback()
+  })
+
+  async.parallelLimit(arr, 10, (err, result) => {
+    console.log('result', result)
+    if (err) res.status(500).send(err)
+    if (result) {
+      let maxNode = _.maxBy(result, function (item) {
+        return item.result
+      })
+      res.send(maxNode)
+    }
+  })
+})
+
 app.listen(5000, '0.0.0.0', () => {
   console.log('app start')
 })
